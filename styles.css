@@ -125,7 +125,7 @@
       }
     }
 
-    /* ====      carousel
+/* ====      carousel
   =============================== */
   .bg-purple {
     background-color: var(--clr-primary);
@@ -142,4 +142,24 @@
   .carousel-control-next img {
     width: 30px;
   }
-  
+
+/* ===== most popular tutorials section
+================================ */
+  .tutorials{
+    margin: 6.25rem 6.25rem 4.688rem 10rem;
+  }
+
+  .phillip,
+  .vid-length{
+    color: var(--text-color-primary);
+    font-weight: var(--fw-semibold);
+  }
+
+  .phillip-img {
+    width : 30px;
+  }
+
+  .prev, 
+  .next {
+    margin: 130rem 0.125rem 0.5rem 0.125rem;
+  }

@@ -27,6 +27,7 @@
   }
 /* ===== base
   ================================= */
+
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -68,6 +69,7 @@
       cursor: pointer;
       border-radius: .125rem;        
     }
+      
 
 /* ====== hero
   ============================= */
@@ -99,3 +101,45 @@
       font-weight: var(--fw-bold);
       font-family: var(--font-family-base);
     }
+
+/***tablets***/
+    @media only screen and (max-width: 769px) {
+      .hero-img {
+        width: 500px;
+      }
+      .jumbotron-title {
+        font-size: 3rem;
+        margin: auto;
+      }
+    }
+
+/***mobile***/
+    @media only screen and (max-width: 575px) {
+      .hero-img {
+        width: 400px;
+      }
+
+      .jumbotron-title {
+        font-size: 2rem;
+        margin: auto;
+      }
+    }
+
+    /* ====      carousel
+  =============================== */
+  .bg-purple {
+    background-color: var(--clr-primary);
+  }
+
+  .img_1,
+  .img_2 {
+    max-width: 90rem;
+    height: 10rem;
+  }
+
+  
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    width: 30px;
+  }
+  

@@ -1,5 +1,5 @@
-/* ========= variables
-  ============================= */
+/* ====== variables
+  =============================== */
   :root {
     --clr-primary: #C271FF;
     --clr-black:  #071629;
@@ -25,8 +25,8 @@
     --fw-black: 900;
 
   }
-/* ====== base
-  ============================= */
+/* ===== base
+  ================================= */
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -50,10 +50,10 @@
     font-weight: var(--fw-regular);
   }
   
-/*======== header
-  ============================= */
+/* ==== header
+  =============================== */
     .hero-img {
-      background-image: url('images/bitmap.png');
+      background-image: url('images/pic_1.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       height: 100vh;
@@ -68,7 +68,7 @@
       border-radius: .125rem;        
     }
 
-/* ====  hero
+/* ====== hero
   ============================= */
     .btn-purple {
       background-color: var(--clr-primary) !important;
@@ -99,8 +99,8 @@
       font-family: var(--font-family-base);
     }
 
-/* ==== quotes section
-  ============================= */
+/* ====      carousel
+  =============================== */
     .bg-purple {
       background-color: var(--clr-primary);
     }
@@ -117,13 +117,14 @@
       width: 30px;
     }
 
-/* ==== tutorials section
-  ============================= */
+/* ===== most popular tutorials section
+  ================================ */
     .tutorials{
       margin: 6.25rem 6.25rem 4.688rem 10rem;
     }
 
-    .phillip, .vid-length{
+    .phillip,
+    .vid-length{
       color: var(--text-color-primary);
       font-weight: var(--fw-semibold);
     }
@@ -132,12 +133,13 @@
       width : 30px;
     }
 
-    .prev, .next {
+    .prev, 
+    .next {
       margin: 130rem 0.125rem 0.5rem 0.125rem;
     }
 
-/* === membership section
-  ============================= */
+/* ======= membership section
+  ========================== */
     .membership {
       background: var(--clr-blue);
     }
@@ -153,15 +155,15 @@
       height: 150px;
     }
 
-/* ==== video section
-  ============================= */
+/* ======== videos section
+  ========================== */
     .before, 
     .after{
       margin: 210rem 0.125rem 0.5rem 0.125rem;
     }
 
-/* ==== footer
-  ============================= */
+/*========footer
+  ========================== */
     .bg-blue {
       background-color: #071629;
     }
@@ -186,7 +188,7 @@
       line-height: 15px;
     }
 
-    /** loader**/
+    /*=====loader=======*/
     .loader {
         border: 10px solid #f3f3f3;
         border-top: 10px solid #C271FF;

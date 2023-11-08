@@ -186,3 +186,29 @@
   .after{
     margin: 210rem 0.125rem 0.5rem 0.125rem;
   }
+
+  /*========footer
+  ========================== */
+  .bg-blue {
+    background-color: #071629;
+  }
+
+  .logo {
+    margin: 7rem 20rem 7.75rem 15rem;
+  }
+  
+  .social-media {
+    margin: 7rem 15rem 8.063rem 26rem;
+  }
+  
+  .facebook-icon,
+  .twitter-icon {
+    margin: 0rem 1.5rem 0rem 0rem;
+  }
+  
+  .trademark {
+    margin: .125rem 4rem .5rem 55rem;
+    font-weight: var(--fw-light);
+    font-size: 12px;
+    line-height: 15px;
+  }

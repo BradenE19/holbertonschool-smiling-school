@@ -179,3 +179,10 @@
   .register {
     height: 150px;
   }
+
+  /* ======== videos section
+  ========================== */
+  .before, 
+  .after{
+    margin: 210rem 0.125rem 0.5rem 0.125rem;
+  }

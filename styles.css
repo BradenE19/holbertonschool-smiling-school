@@ -212,3 +212,47 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  /**** PRICING NEW PAGE *****/
+
+  .check-mark:before {
+    font-family: 'holberton_school-icon' !important;
+    content: "\e905";
+    font-size: 2rem;
+  }
+  
+  .go-pro {
+    font-size: 3.75rem;
+    margin-top: 4rem;
+  }
+  
+  .features-row {
+    height: 3rem;
+  }
+  
+  .logo-smile-title {
+    height: 2rem;
+  }
+  
+  .logo-text-title {
+    height: 3rem;
+  }
+  
+  .pricing-header {
+    background-image: url(images/pic_2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--color-black);
+    height: 80rem;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-header {
+      background-image: url(../images/pic_2.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 90rem;
+      width: 100%;
+    }
+  }

@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="holberton_school-icon/style.css">
 
-    <!--  fonts -->
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
 </head>
 <body>
     <!-- header -->
@@ -54,11 +55,48 @@
             </section>
         </div>
     </header>
+    <!-- Main-->
     <main>
+        <!-- Search filters Section-->
+        <section class="search-filters-section">
+            <div class="container">
+                <nav aria-label="nav-search">
+                    <form class="navbar-form form-row py-4">
+                        <div class="form-group col-12 col-sm-12 col-md-4">
+                            <label for="s-input" class="label-form text-white font-weight-bold">KEYWORDS</label>
+                            <div>
+                                <input class="form-control border-top-0 border-right-0 border-left-0 mr-sm-2" id="s-input" type="search" placeholder="Search by keywords" aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="form-group column dropdown col-12 col-sm-6 col-md-4">
+                            <label for="Novice" class="label-form text-white font-weight-bold">TOPIC</label>
+                            <div>
+                                <select class="form-control border-top-0 border-right-0 border-left-0" id="topic" aria-label="dropdown-options">
+                                    <option value="novice" class="select-option bg-white">Novice</option>
+                                    <option value="intermediate" class="select-option bg-white">Intermediate</option>
+                                    <option value="expert" class="select-option bg-white">Expert</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group column dropdown col-12 col-sm-6 col-md-4">
+                            <label for="MostPopular" class="label-form text-white font-weight-bold">SORT BY</label>
+                            <div>
+                                <select class="form-control border-top-0 border-right-0 border-left-0" id="sortby" aria-label="dropdown-options">
+                                    <option value="mostpopular" class="select-option bg-white">Most Poular</option>
+                                    <option value="mostrecent" class="select-option bg-white">Most Recent</option>
+                                    <option value="mostviewed" class="select-option bg-white">Most Viewed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
 </body>
 </html>

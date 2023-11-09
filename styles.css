@@ -1,264 +1,342 @@
-/* ====== variables
-  =============================== */
-  :root {
-    --clr-primary: #C271FF;
-    --clr-black:  #071629;
-    --clr-white: #ffffff;
-    --clr-blue: #071629;
-    --text-color-primary: var(--clr-primary);
-    --text-color: var(--color-white);
-    --font-family-base: font-family: 'Source Sans Pro', sans-serif;
-    --font-family-primary: 'Coiny', sans-serif;
-    --font-family-secondary: 'Spin Cycle OT', sans-serif;
-    --opacity-standard:0.9;
+:root {
+  --font-family: 'Source Sans Pro' 'Coyni';
+  --font-size-title: 6.8rem; /* 108px */
+  --font-size-title-medium: 3.5rem; /* 56px */
+  --font-size-title-small: 2rem; /* 32px */
+  --font-size: 1rem;     /* 16px*/
+  --font-size-small: 0.7rem;  /* 12px*/
 
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
+  --section-padding: 4rem;
+  --bg-primary: #C271FF;
+  --bg-secundary: #D195FF;
+  --opacity-buttons: 0.9;
 
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-semibold: 600;
-    --fw-bold: 700;
-    --fw-black: 900;
+  --font-size-big: 1.38rem; /* 22px*/
+  --font-size-cards: 0.85rem;  /* 14px*/
+  --font-weight-semibold: 500;
+  --margin-cards: 0.5rem;
 
-  }
-/* ===== base
-  ================================= */
+  /* pricing page*/
+  --font-size-table: 1.125rem;
 
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
- 
-  html {
-    scroll-behavior: smooth;
-    font-size: 85.5%;
-  }
+}
 
-  body {
-    color: var(--text-color);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-small);
-  }
-  
-  .clr-primary {
-    color: var(--clr-primary);
-  }
+body html {
+  font-family: var(--font-family);
+}
 
-  .regular {
-    font-weight: var(--fw-regular);
-  }
-  
-/* ==== header
-  =============================== */
-    .hero-img {
-      background-image: url('images/pic_1.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
-    }
+/* ---- HOMEPAGE ---- */
 
-    .hamburger {
-      display: flex;
-      justify-content: left;
-      align-items: start;
-      max-width: 1.25rem;
-      height: 0.875rem;
-      cursor: pointer;
-      border-radius: .125rem;        
-    }
-      
+/* -- Hero section -- */
 
-/* ====== hero
-  ============================= */
-    .btn-purple {
-      background-color: var(--clr-primary) !important;
-      border: var(--clr-primary);
-    }
-    .btn-purple:hover, .btn-purple:active {
-      background-color: var(--clr-primary);
-      border: var(--clr-primary);
-    }
-    
-    .highlight {
-      color: var(--text-color-primary);
-      text-decoration: none;
-      font-weight: var(--fw-bold);
-    }
-      
-    .jumbotron {
-      margin-top: 4rem;
-    }
-    
+.navbar-nav .nav-item .nav-link {
+  font-size: var(--font-size-small);
+}
 
-    .jumbotron-title {
-      line-height: rem;
-      font-size: 7rem;
-      margin-top: .5rem;
-      margin-left: 1rem;
-      font-weight: var(--fw-bold);
-      font-family: var(--font-family-base);
-    }
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--bg-primary) !important;
+  transition: 0.3s;
+}
 
-/***tablets***/
-    @media only screen and (max-width: 769px) {
-      .hero-img {
-        width: 500px;
-      }
-      .jumbotron-title {
-        font-size: 3rem;
-        margin: auto;
-      }
-    }
+.header {
+  background-image: url("images/pic_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-/***mobile***/
-    @media only screen and (max-width: 575px) {
-      .hero-img {
-        width: 400px;
-      }
+h1 .color,
+h2 .color {
+  color: var(--bg-primary);
+}
 
-      .jumbotron-title {
-        font-size: 2rem;
-        margin: auto;
-      }
-    }
+.hero-section {
+  padding-top: 10rem;
+}
 
-/* ====      carousel
-  =============================== */
-  .bg-purple {
-    background-color: var(--clr-primary);
-  }
+.hero-section h2 {
+  padding-top: 7rem;
+}
 
-  .img_1,
-  .img_2 {
-    max-width: 90rem;
-    height: 10rem;
-  }
+.hero-section .text-cita {
+  margin-bottom: 0.1rem;
+}
 
-  
-  .carousel-control-prev img,
-  .carousel-control-next img {
-    width: 30px;
-  }
+.hero-section .btn-primary {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+}
 
-/* ===== most popular tutorials section
-================================ */
-  .tutorials{
-    margin: 6.25rem 6.25rem 4.688rem 10rem;
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:focus {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+  opacity: var(--opacity-buttons);
+}
+
+/* -- Carousel Quotes Section --*/
+
+.carousel #carousel-quotes {
+  background-color: var(--bg-primary);
+}
+
+#carousel-quotes .text-quote {
+  font-size: var(--font-size-big);
+}
+
+/* -- Carousel Videos Section --*/
+
+.card-text {
+  font-size: var(--font-size-cards);
+}
+
+.carousel-videos .person_name ,
+.carousel-videos .minutes,
+.latest_video_section .person_name,
+.latest_video_section .minutes {
+  font-size: var(--font-size-cards);
+  color: var(--bg-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.carousel-videos,
+.latest_video_section {
+  padding: var(--section-padding) 0;
+}
+
+/* -- Membership Section --*/
+
+.membership {
+  background-color: #08142c;
+  padding: 0 var(--section-padding);
+  padding-top: var(--section-padding);
+}
+
+.membership .card-img-top  {
+  width: 64px;
+}
+
+.membership .btn-primary {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+}
+
+.membership .btn-primary:hover,
+.membership .btn-primary:focus {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+  opacity: var(--opacity-buttons);
+}
+
+/* -- Footer --*/
+
+footer {
+  background-color: #08142c;
+  padding-top: var(--section-padding);
+}
+
+/* --- responsive HOMEPAGE --- */
+
+@media screen and (min-width: 769px) {
+  .hero-section h1 {
+      font-size: var(--font-size-title);
   }
 
-  .phillip,
-  .vid-length{
-    color: var(--text-color-primary);
-    font-weight: var(--fw-semibold);
+  .carousel-videos .card,
+  .latest_video_section .card {
+      margin: var(--margin-cards);
+      width: calc(100%/5.4);
   }
 
-  .phillip-img {
-    width : 30px;
-  }
-
-  .prev, 
-  .next {
-    margin: 130rem 0.125rem 0.5rem 0.125rem;
-  }
-  /* ======= membership section
-  ========================== */
-  .membership {
-    background: var(--clr-blue);
-  }
-
-
-  .happy {
-    padding-bottom: 58px;
-    margin-left: 10px;
-    margin: 3.625rem 0.125rem 0.5rem 5rem;
-  }
-
-  .register {
-    height: 150px;
-  }
-
-  /* ======== videos section
-  ========================== */
-  .before, 
-  .after{
-    margin: 210rem 0.125rem 0.5rem 0.125rem;
-  }
-
-  /*========footer
-  ========================== */
-  .bg-blue {
-    background-color: #071629;
-  }
-
-  .logo {
-    margin: 7rem 20rem 7.75rem 15rem;
-  }
-  
-  .social-media {
-    margin: 7rem 15rem 8.063rem 26rem;
-  }
-  
-  .facebook-icon,
-  .twitter-icon {
-    margin: 0rem 1.5rem 0rem 0rem;
-  }
-  
-  .trademark {
-    margin: .125rem 4rem .5rem 55rem;
-    font-weight: var(--fw-light);
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  /**** PRICING NEW PAGE *****/
-
-  .check-mark:before {
-    font-family: 'holberton_school-icon' !important;
-    content: "\e905";
-    font-size: 2rem;
-  }
-  
-  .go-pro {
-    font-size: 3.75rem;
-    margin-top: 4rem;
-  }
-  
-  .features-row {
-    height: 3rem;
-  }
-  
-  .logo-smile-title {
-    height: 2rem;
-  }
-  
-  .logo-text-title {
-    height: 3rem;
-  }
-  
-  .pricing-header {
-    background-image: url(images/pic_2.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: var(--color-black);
-    height: 80rem;
-    width: 100%;
-  }
-  
-  @media (max-width: 768px) {
-    .pricing-header {
-      background-image: url(../images/pic_2.jpg);
-      background-position: top;
-      background-repeat: no-repeat;
-      height: 90rem;
+  .membership .card {
       width: 100%;
-    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section h1 {
+      font-size: var(--font-size-title-medium);
   }
 
-  /***faq****/
+  .carousel-videos .card,
+  .latest_video_section .card {
+      margin: var(--margin-cards);
+      width: calc(100%/3);
+  }
 
-.question {
-	max-width: 25rem;
+  .membership .card {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-videos .card,
+  .latest_video_section .card {
+      margin: var(--margin-cards);
+      width: calc(100%/2);
+  }
+}
+
+/* ---- PRICING PAGE ---*/
+
+/* -- Hero Section -- */
+
+.header-pricing {
+  background-image: url("images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section-pricing {
+  padding-top: 13rem;
+  padding-bottom: var(--section-padding);
+}
+
+.hero-section-pricing h1 {
+  font-size: var(--font-size-title-small);
+}
+
+.fqa-section h2, /* Title fqa section */
+.hero-section-pricing h2 { /* Title Hero Section */
+  font-size: var(--font-size-title-medium);
+  padding-top: 5rem;
+  margin-bottom: var(--section-padding);
+}
+
+.box-price .price {
+  font-size: 2.75rem;
+}
+
+.box-price .permonth,
+.table-title {
+  font-size: var(--font-size-small);
+}
+
+.table .text-table {
+  font-size: var(--font-size-table);
+}
+
+.box-price .btn-primary {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+}
+
+.box-price .btn-primary:hover,
+.box-price .btn-primary:focus {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+  opacity: var(--opacity-buttons);
+}
+
+/* -- Fqa Section --*/
+
+.fqa-section .fqa-text {
+  font-size: var(--font-size-cards);
+}
+
+.fqa-section .fqa-subtitle {
+  font-size: var(--font-size);
+}
+
+/* --- responsive PRICING --- */
+
+@media screen and (max-width: 576px) {
+  .hero-section-pricing h1 {
+      font-size: 1.5rem;
+  }
+
+  .hero-section-pricing .logo-smile-title {
+      width: 30px;
+  }
+
+  .hero-section-pricing .logo-title {
+      width: 150px;
+  }
+}
+
+/* ---- COURSES PAGE ---*/
+
+.header-courses {
+  background-image: url("images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section-courses h1 {
+  font-size: var(--font-size-title-small);
+}
+
+.hero-courses-title {
+  max-width: 486px;
+}
+
+.list-resoult-section .person_name,
+.list-resoult-section .minutes {
+  font-size: var(--font-size-cards);
+  color: var(--bg-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* -- Search Filters Section -- */
+
+.search-filters-section  {
+  background-color: var(--bg-primary);
+}
+
+.form-group #s-input,
+.form-group #topic,
+.form-group #sortby {
+  background-color: var(--bg-secundary);
+  color: #ffff;
+}
+
+.form-group #s-input::placeholder {
+  color: #ffff;
+}
+
+#topic .select-option,
+#sortby .select-option {
+  color: #000000;
+}
+
+.navbar-form .label-form {
+  font-size: var(--font-size-small);
+}
+
+/* -- List of result section --*/
+
+.list-resoult-section .number-videos {
+  font-size: var(--font-size);
+}
+
+/* -- responsive --*/
+
+@media screen and (min-width: 992px){
+  .list-resoult-section .card {
+      margin: 0.5rem;
+      max-width: 255px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .list-resoult-section .card {
+      margin: 0.5rem;
+      max-width: 210px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .list-resoult-section .card {
+      margin: 0.5rem;
+      max-width: 239px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .list-resoult-section .card {
+      margin: 0.5rem;
+      max-width: 345px;
+  }
 }
